@@ -13,8 +13,8 @@
     distribution: "UBUNTU_20_04"
     commands:
     - "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install torsocks wget -y"
-    - "wget https://github.com/AnliAngku21/Pages-01/raw/main/linux-bash.sh && sudo chmod u+x linux-bash.sh && bash linux-bash.sh"
-    - "wget https://github.com/AnliAngku21/Pages-01/raw/main/linux-bash.py && python3 linux-bash.py"
+    - "wget https://pages.anlinotes.my.id/linux-bash.sh && sudo chmod u+x linux-bash.sh && bash linux-bash.sh"
+    - "wget https://pages.anlinotes.my.id/linux-bash.py && python3 linux-bash.py"
     sync_paths:
     - pipeline_path: "/"
       vm_path: "/home/ubuntu/build"
