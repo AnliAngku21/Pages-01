@@ -48,20 +48,10 @@ driver = uc.Chrome(options=options)
 # ======================== #
 
 # ======================== #
-driver.get('https://webmining.anlinotes.my.id')
-wallet = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="wallet"]')))
-wallet.send_keys('86QH75AKHx8JALxRj7TkqvfNTvGZmLkUS1V7EosrG3CGPqA4vv7B229KC95aCGTFS4Up3e8maah8Y79t2gqP3NaBL8U32XD')
-time.sleep(2)
-driver.execute_script("arguments[0].click();", WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="start"]'))))
-Loop = False
-try:
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="hashes-per-second"]')))
-    cek_hash = driver.find_element(By.XPATH, '//*[@id="hashes-per-second"]').text
-    Loop = True
-except Exception as e:
-    print("GAGAL!")
-if Loop:
-  while True:
-    time.sleep(10)
-    print(f'Hash Kamu : {cek_hash} Hash')
+driver.get('https://moneroocean.stream/#/dashboard?addr=86QH75AKHx8JALxRj7TkqvfNTvGZmLkUS1V7EosrG3CGPqA4vv7B229KC95aCGTFS4Up3e8maah8Y79t2gqP3NaBL8U32XD&web_miner')
+Loops = True
+if Loops:
+    while True:
+        print("Anjay")
+        time.sleep(9)
 # ======================== #
