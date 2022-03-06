@@ -13,8 +13,6 @@ Logo_Awal() # Logo Awal
 # ======================== #
 
 # ======================== #
-from datetime import datetime
-from pydub import AudioSegment
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -28,9 +26,8 @@ from selenium.common.exceptions import NoSuchElementException, WebDriverExceptio
 # ======================== #
 # pip3 install pydub SpeechRecognition selenium requests undetected-chromedriver==1.5.2
 # ======================== #
-import speech_recognition as sr
 import undetected_chromedriver as uc
-import random, urllib, os, sys, time, requests, urllib, pydub, re, json
+import random, urllib, os, sys, time, requests, urllib
 # ======================== #
 
 # ======================== #
