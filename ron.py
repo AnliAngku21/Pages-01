@@ -38,9 +38,9 @@ import random, urllib, os, sys, time, requests, urllib, pydub, re, json, stem.pr
 # ======================== #
 options = uc.ChromeOptions()
 options.add_argument('--disable-notifications')
-#options.add_argument('--headless') # Linux/Windows
-#options.add_argument('--no-sandbox') # Linux/Windows
-#options.add_argument('--headless=chrome') # Linux/Windows
+options.add_argument('--headless') # Linux/Windows
+options.add_argument('--no-sandbox') # Linux/Windows
+options.add_argument('--headless=chrome') # Linux/Windows
 #options.add_argument(f'--proxy-server=socks5://127.0.0.1:9050') # Linux/Windows
 options.add_argument('--window-size=1366,768')
 #options.add_extension('./ublock.crx')
